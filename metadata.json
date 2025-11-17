@@ -1,0 +1,5 @@
+{
+  "name": "Monthly Fleets Back Charge Visualization Report",
+  "description": "A data visualization web application to display dashboards, summaries, and filters from an uploaded .xlsx Excel file containing fleet data.",
+  "requestFramePermissions": []
+}

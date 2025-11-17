@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monthly Fleets Back Charge Visualization Report</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Oswald:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'sans': ['Nunito Sans', 'Roboto', 'sans-serif'],
+              'display': ['Oswald', 'sans-serif'],
+            },
+            colors: {
+              'primary': '#1A0A38', // Deep Indigo-Purple
+              'secondary': '#2D1E4D', // Lighter purple for cards
+              'accent': '#00BFFF',   // Electric Blue
+              'accent-secondary': '#E000E0', // Bright Magenta
+              'mute-pink': '#C75B66', // A muted pink from the theme
+              'mute-pink-hover': '#923A5A', // A darker shade for hover
+              // New Dashboard Card Palette
+              'theme-1': '#461952',
+              'theme-2': '#662249',
+              'theme-3': '#923A5A',
+              'theme-4': '#C75B66',
+              'theme-5': '#F3806C',
+              'theme-6': '#FFAD6F',
+              'theme-total': '#1D1A20',
+              // New Summary Page Colors
+              'report-bg': '#F1E8C1',
+              'report-label-bg': '#720838',
+              'report-label-hover': '#37D9FF',
+            },
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.2.0",
+    "react-dom/": "https://esm.sh/react-dom@18.2.0/",
+    "react/": "https://esm.sh/react@18.2.0/",
+    "recharts": "https://esm.sh/recharts@2.12.7?deps=react@18.2.0",
+    "react-window": "https://esm.sh/react-window@1.8.10?deps=react@18.2.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-primary">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
